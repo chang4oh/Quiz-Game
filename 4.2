@@ -1,0 +1,48 @@
+import random
+
+# Define quiz questions and answers as dictionaries
+quiz_data = [
+    {
+        "question": "What is 2 + 2?",
+        "choices": ["3", "4", "5"],
+        "correct_answer": "4"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "choices": ["Earth", "Mars", "Venus"],
+        "correct_answer": "Mars"
+    },
+    {
+        "question": "What is the capital of France?",
+        "choices": ["Paris", "London", "Berlin"],
+        "correct_answer": "Paris"
+    }
+]
+
+def ask_question(question_data):
+    print(question_data["question"])
+    random.shuffle(question_data["choices"])  # Shuffle choices for variety
+    for i, choice in enumerate(question_data["choices"], start=1):
+        print(f"{i}. {choice}")
+    
+    user_answer = input("Enter the number of your answer: ")
+    if user_answer.isdigit() and 1 <= int(user_answer) <= len(question_data["choices"]):
+        user_choice = question_data["choices"][int(user_answer) - 1]
+        return user_choice == question_data["correct_answer"]
+    return False
+
+def play_quiz(questions):
+    score = 0
+    for i, question_data in enumerate(questions, start=1):
+        print(f"Question {i}/{len(questions)}")
+        if ask_question(question_data):
+            print("Correct!\n")
+            score += 1
+        else:
+            print(f"Sorry, the correct answer is {question_data['correct_answer']}.\n")
+    return score
+
+if __name__ == "__main__":
+    random.shuffle(quiz_data)  # Shuffle quiz questions for variety
+    final_score = play_quiz(quiz_data)
+    print(f"Your final score: {final_score}/{len(quiz_data)}")
