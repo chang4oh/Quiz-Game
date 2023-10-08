@@ -76,7 +76,7 @@ Definition:
 
 Script Description:
       1) Array
-            1.1)
+            1.1) Simple Array List to store quesitons, choices, and answers
 
       2) List
             2.1)
