@@ -100,7 +100,7 @@ Script Description:
 			The main section shuffles the questions and starts the quiz, displaying the final score at the end.
 
 	5) Tuple
-    	    5.1) Uses set to store questions, choices, and answers
+    	    		5.1) Uses set to store questions, choices, and answers
 			Not ideal because tuples are fixed set of related values and are immutable (can't change values)
 			5.2) Modified to show all questions and answer after the quiz
 
