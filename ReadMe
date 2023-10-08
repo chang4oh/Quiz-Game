@@ -84,11 +84,11 @@ Script Description:
 			This example is basically the Array example (1.2)
 	
 	3) Set 
-        3.1) Uses set to store questions, choices, and answers
+            3.1) Uses set to store questions, choices, and answers
 			Not ideal because set doesn't allow duplicates and don't store elements in order
 
-    	4) Dictionary
-        4.1) Uses dictionary to store questions, choices, and answers
+	4) Dictionary
+            4.1) Uses dictionary to store questions, choices, and answers
 			Not ideal because disctionary used to store key-value pairs.
 			Similar to set and Dictionary can add set as value to the keys.
 			Uses hash (key-value)
@@ -99,10 +99,10 @@ Script Description:
 			The play_quiz function iterates through the quiz questions, calls ask_question, and calculates the final score.
 			The main section shuffles the questions and starts the quiz, displaying the final score at the end.
 
-    5) Tuple
-        5.1) Uses set to store questions, choices, and answers
+	5) Tuple
+    	    5.1) Uses set to store questions, choices, and answers
 			Not ideal because tuples are fixed set of related values and are immutable (can't change values)
-		5.2) Modified to show all questions and answer after the quiz
+			5.2) Modified to show all questions and answer after the quiz
 
     6) Combination
         
