@@ -1,0 +1,26 @@
+# Define quiz questions and correct answers
+questions = [
+    "What is the capital of France?",
+    "Which planet is known as the Red Planet?",
+    "What is 2 + 2?"
+]
+
+correct_answers = {
+    "Paris",
+    "Mars",
+    "4"
+}
+
+# Initialize an empty set to track user responses
+user_responses = set()
+
+# Quiz loop
+for i, question in enumerate(questions, start=1):
+    print(f"Question {i}: {question}")
+    
+    user_answer = input("Your answer: ")
+    user_responses.add(user_answer)
+
+# Calculate and display the score based on correct answers
+score = len(user_responses.intersection(correct_answers))
+print(f"Your score: {score}/{len(correct_answers)}")
