@@ -75,11 +75,11 @@ Definition:
 
 Script Description:
 	1) Array
-		1.1) Simple Array List to store question, choices, and answers
-		1.2) Added while loop to try again if entered wrong input
+			1.1) Simple Array List to store question, choices, and answers
+			1.2) Added while loop to try again if entered wrong input
 
 	2) List
-        2.1) Uses list to store questions, choices, and answers
+        	2.1) Uses list to store questions, choices, and answers
 			List is versatile with a lot of supported methods
 			This example is basically the Array example (1.2)
 	
@@ -87,13 +87,13 @@ Script Description:
         3.1) Uses set to store questions, choices, and answers
 			Not ideal because set doesn't allow duplicates and don't store elements in order
 
-    4) Dictionary
+    	4) Dictionary
         4.1) Uses dictionary to store questions, choices, and answers
 			Not ideal because disctionary used to store key-value pairs.
 			Similar to set and Dictionary can add set as value to the keys.
 			Uses hash (key-value)
 
-		4.2) Efficient Dictionary	
+	4.2) Efficient Dictionary	
 			Quiz questions and answers are stored as dictionaries within a list for easy management.
 			The ask_question function displays a question, shuffles the choices for variety, and checks the user's answer.
 			The play_quiz function iterates through the quiz questions, calls ask_question, and calculates the final score.
