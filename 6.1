@@ -1,0 +1,64 @@
+import random
+
+# Define quiz questions and answers as dictionaries within a list
+quiz_data = [
+    {
+        "question": "What is 2 + 2?",
+        "choices": ["3", "4", "5"],
+        "correct_answer": "4"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "choices": ["Earth", "Mars", "Venus"],
+        "correct_answer": "Mars"
+    },
+    {
+        "question": "What is the capital of France?",
+        "choices": ["Paris", "London", "Berlin"],
+        "correct_answer": "Paris"
+    }
+]
+
+# Shuffle the quiz questions for variety
+random.shuffle(quiz_data)
+
+# Create a set to track user responses
+user_responses = set()
+
+# Initialize score as a dictionary with questions as keys and correctness as values
+score = {question["question"]: None for question in quiz_data}
+
+def ask_question(question_data):
+    print(question_data["question"])
+    random.shuffle(question_data["choices"])  # Shuffle choices for variety
+    for i, choice in enumerate(question_data["choices"], start=1):
+        print(f"{i}. {choice}")
+    
+    user_answer = input("Enter the number of your answer: ")
+    if user_answer.isdigit() and 1 <= int(user_answer) <= len(question_data["choices"]):
+        user_choice = question_data["choices"][int(user_answer) - 1]
+        user_responses.add(user_choice)
+        return user_choice == question_data["correct_answer"]
+    return False
+
+# Play the quiz
+for question_data in quiz_data:
+    question = question_data["question"]
+    is_correct = ask_question(question_data)
+    score[question] = is_correct
+    if is_correct:
+        print("Correct!\n")
+    else:
+        print(f"Sorry, the correct answer is {question_data['correct_answer']}.\n")
+
+# Calculate the final score
+correct_count = sum(score.values())
+total_questions = len(quiz_data)
+final_score = correct_count / total_questions * 100
+
+# Display the final score
+print(f"You got {correct_count}/{total_questions} questions correct.")
+print(f"Your final score: {final_score}%")
+
+# Display unique user responses
+print("Unique User Responses:", user_responses)
