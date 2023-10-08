@@ -93,7 +93,7 @@ Script Description:
 			Similar to set and Dictionary can add set as value to the keys.
 			Uses hash (key-value)
 
-			4.2) Efficient Dictionary	
+			4.2) Dictionary with shuffle	
 			Quiz questions and answers are stored as dictionaries within a list for easy management.
 			The ask_question function displays a question, shuffles the choices for variety, and checks the user's answer.
 			The play_quiz function iterates through the quiz questions, calls ask_question, and calculates the final score.
@@ -105,5 +105,11 @@ Script Description:
 			5.2) Modified to show all questions and answer after the quiz
 
 	6) Combination
-        
+        		6.1) Dictionary within a List
+			Quiz questions and answers are stored as dictionaries within a list.
+			The ask_question function displays a question, shuffles the choices, and tracks user responses in a set.
+			The score variable is a dictionary that stores the correctness of each question.
+			The code calculates the final score as a percentage and displays it at the end.
+			The set user_responses keeps track of unique user responses.
+			This example combines various data structures to create a quiz game with questions, choices, answers, and scoring.
       
