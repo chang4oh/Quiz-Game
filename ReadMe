@@ -1,35 +1,95 @@
-Quiz Game in Python
-Making Quiz Game is a great practice in learning array, list, set, dictionary, and tuple.
-I will show you each example individually and in combination; 
-
 Content: 
-      My Quiz
-      ChatGPT creation quiz
-      Brocode's Quiz tutorial
+      Introduction
+      Definition
+      Script Description
 
+Introduction:
+            Quiz Game in Python
+
+            A "quiz game" is an interactive and educational activity where participants, often referred 
+            to as players or contestants, are presented with a series of questions or challenges that test 
+            their knowledge on a specific topic or a variety of subjects. The primary goal of a quiz game 
+            is to entertain, engage, and educate participants while allowing them to compete or assess their knowledge.
+            
+            Making Quiz Game is a great practice in learning list, set, dictionary, and tuple.
+            Each script material has it's pro and con which will be discussed.
+            I will show you each example individually and in combination; 
 
 Definition: 
       Array - 
+            In Python, the term "array" is often used to refer to a sequence of elements, usually of the same data type, 
+            organized in a linear fashion. While Python does have lists and NumPy arrays that serve similar purposes as 
+            traditional arrays in some other programming languages, Python arrays are generally not considered a built-in data type.
+
+            Here's a simplified definition:
+
+            "An array-like structure in Python is a collection of elements, typically of the same data type, arranged in a linear sequence."
 
       List -
+            In Python, a "list" is a built-in data structure used to store an ordered collection of elements or items. 
+            Lists are versatile and mutable, meaning you can change their contents after creating them. Each element 
+            in a list can be of a different data type, including numbers, strings, other lists, and more. 
+            
+            Here's a simplified definition:
 
-      Set
+            "A list in Python is a flexible and ordered collection of items where you can store and manipulate various data types."
 
-      Dictionary
+      Set -
+            In Python, a "set" is a built-in data structure used to store a collection of unique and unordered elements. 
+            Sets are like containers that can hold various items, but each item must be distinct (no duplicates), and the 
+            items are not stored in any particular order. 
 
-      Tuple
+            Here's a simplified definition:
 
+            "A set in Python is a collection of unique elements where each element appears only once, and the order of elements is not guaranteed."
+
+      Dictionary -
+            In Python, a "dictionary" is a built-in data structure used to store a collection of key-value pairs. 
+            Each key in a dictionary is unique, and it is associated with a corresponding value. Dictionaries are 
+            also known as "maps" or "hash maps" in other programming languages. 
+
+            Here's a simplified definition:
+
+            "A dictionary in Python is like a real-world dictionary. It stores pairs of words (keys) and their meanings (values). 
+            You can look up the meaning (value) of a word (key) quickly."
+
+      Tuple - 
+            In Python, a "tuple" is a built-in data structure used to store an ordered collection of elements, similar to a list. 
+            However, unlike lists, tuples are immutable, which means once you create a tuple, you cannot change its contents 
+            (add, remove, or modify elements). Tuples are created using parentheses () or the tuple() constructor.
+
+            Here's a simplified definition:
+            
+            "A tuple in Python is an ordered collection of elements, similar to a list, but with the key difference that it cannot be changed after it is created."
+
+      NumPy -
+            NumPy, which stands for "Numerical Python," is a popular open-source library in Python used for numerical and 
+            scientific computing. It provides support for multidimensional arrays (often referred to as NumPy arrays or ndarrays) 
+            and a wide range of mathematical functions to operate on these arrays efficiently. NumPy is a fundamental library for 
+            data manipulation, data analysis, and numerical computations in Python.
+
+            Here's a simplified definition of NumPy:
+
+            "NumPy is a Python library that provides support for efficient manipulation and computation with multidimensional arrays 
+            and matrices, along with a collection of mathematical functions to perform operations on these arrays."
+      
 
 Script Description:
       1) Array
-          1.1)
+            1.1)
 
       2) List
-          2.1)
+            2.1)
 
       3) Set
+            3.1)
 
       4) Dictionary
+            4.1)
 
       5) Tuple
+            5.1)
 
+      6) Combination
+            6.1)
+      
