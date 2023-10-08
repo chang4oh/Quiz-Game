@@ -93,7 +93,7 @@ Script Description:
 			Similar to set and Dictionary can add set as value to the keys.
 			Uses hash (key-value)
 
-	4.2) Efficient Dictionary	
+			4.2) Efficient Dictionary	
 			Quiz questions and answers are stored as dictionaries within a list for easy management.
 			The ask_question function displays a question, shuffles the choices for variety, and checks the user's answer.
 			The play_quiz function iterates through the quiz questions, calls ask_question, and calculates the final score.
@@ -104,6 +104,6 @@ Script Description:
 			Not ideal because tuples are fixed set of related values and are immutable (can't change values)
 			5.2) Modified to show all questions and answer after the quiz
 
-    6) Combination
+	6) Combination
         
       
