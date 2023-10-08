@@ -1,0 +1,42 @@
+# Define quiz questions, choices, and correct answers
+questions = [
+    "What is 2 + 2?",
+    "Which planet is known as the Red Planet?",
+    "What is the capital of France?"
+]
+
+choices = [
+    ["3", "4", "5"],
+    ["Earth", "Mars", "Venus"],
+    ["Paris", "London", "Berlin"]
+]
+
+correct_answers = [1, 2, 1]  # Index of the correct answer for each question
+
+# Initialize the score
+score = 0
+
+# Quiz loop
+for i in range(len(questions)):
+    print(f"Question {i + 1}: {questions[i]}")
+    for j, choice in enumerate(choices[i], start=1):
+        print(f"{j}. {choice}")
+
+    # Keep asking for the user's answer until a valid input is provided
+    user_choice = -1  # Initialize user_choice with an invalid value
+    while user_choice not in [1, 2, 3]:
+        try:
+            user_choice = int(input("Enter the number of your answer (1/2/3): "))
+            if user_choice not in [1, 2, 3]:
+                print("Invalid choice. Please enter a valid number.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    if user_choice == correct_answers[i]:
+        print("Correct!\n")
+        score += 1
+    else:
+        print(f"Sorry, the correct answer is {correct_answers[i]}.\n")
+
+# Display the final score
+print(f"You got {score}/{len(questions)} questions correct.")
