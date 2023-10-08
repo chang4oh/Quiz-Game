@@ -1,0 +1,39 @@
+# Define quiz questions, choices, and correct answers using dictionaries
+quiz_data = [
+    {
+        "question": "What is 2 + 2?",
+        "choices": ["3", "4", "5"],
+        "correct_answer": "4"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "choices": ["Earth", "Mars", "Venus"],
+        "correct_answer": "Mars"
+    },
+    {
+        "question": "What is the capital of France?",
+        "choices": ["Paris", "London", "Berlin"],
+        "correct_answer": "Paris"
+    }
+]
+
+# Initialize the score
+score = 0
+
+# Quiz loop
+for i, question_data in enumerate(quiz_data, start=1):
+    print(f"Question {i}: {question_data['question']}")
+    
+    for j, choice in enumerate(question_data['choices'], start=1):
+        print(f"{j}. {choice}")
+
+    user_answer = input("Your answer: ")
+    
+    if user_answer == question_data['correct_answer']:
+        print("Correct!\n")
+        score += 1
+    else:
+        print(f"Sorry, the correct answer is {question_data['correct_answer']}.\n")
+
+# Display the final score
+print(f"You got {score}/{len(quiz_data)} questions correct.")
